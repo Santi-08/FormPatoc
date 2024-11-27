@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulario de Patricia</h1>
+    <p id="description"> Aprendiz: Patricia Sánchez Prada-2898741
+    </p>
+    <form id="survey-form"
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label id="number-label" for="number">Age:</label>
+        <input type="number" id="number" name="age" min="0" max="120" placeholder="Your age" required>
+
+        <label for="dropdown">How did you hear about us?</label>
+        <select id="dropdown" name="referral" required>
+            <option value="">Select an option</option>
+            <option value="friend">Friend</option>
+            <option value="social_media">Social Media</option>
+            <option value="search_engine">Search Engine</option>
+        </select>
+
+        <fieldset>
+            <legend>Preferred Contact Method:</legend>
+            <label>
+                <input type="radio" name="contact" value="email" required> Email
+            </label>
+            <label>
+                <input type="radio" name="contact" value="phone"> Phone
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Interests:</legend>
+            <label>
+                <input type="checkbox" name="interest" value="coding"> Coding
+            </label>
+            <label>
+                <input type="checkbox" name="interest" value="design"> Design
+            </label>
+            <label>
+                <input type="checkbox" name="interest" value="music"> Music
+            </label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
